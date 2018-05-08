@@ -1,11 +1,8 @@
 import React from 'react';
-import updateTolerance from '../../actions/toleranceActions'
 import updateIdeal from '../../actions/idealPortfolioActions'
-
 
 const ToleranceRange = ({ dispatch }) => {
   const handleChange = (e) => {
-    dispatch(updateTolerance(e.target.value));
     dispatch(updateIdeal(e.target.value));
   }
   return (

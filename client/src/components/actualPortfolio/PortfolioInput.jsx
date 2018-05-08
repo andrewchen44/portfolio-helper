@@ -1,5 +1,5 @@
 import React from 'react';
-import updateActual from '../../actions/actualPortfolioActions.js';
+import updateActual from '../../actions/actualPortfolioActions';
 
 const PortfolioInput = ({ dispatch, assetType, index }) => {
   const handleChange = (e) => {

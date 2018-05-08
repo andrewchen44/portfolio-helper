@@ -11,7 +11,7 @@ const mapStateToProps = ({ assetTypes, idealPortfolio, actualPortfolio }) => {
     assetTypes: assetTypes,
     actualPortfolio: actualPortfolio,
     idealPortfolio: idealPortfolio,
-  }
+  };
 }
 
 export default connect(mapStateToProps)(RebalanceContainer);

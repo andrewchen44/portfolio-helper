@@ -5,15 +5,16 @@ const PortfolioChart = ({ assetTypes, tolerance, idealPortfolio}) => {
   const data = idealPortfolio.map((assetWeight, index) => {
     return {
       label: assetTypes[index],
-      value: assetWeight
+      value: assetWeight,
     }
   });
-  return (<div className='ideal-portfolio_chart'>
-    <h4>Your Ideal Portolfio in Percentages</h4>
-    <DonutChart className='donut_chart'
-      data={data}
-    />
-  </div>
+  return (
+    <div className='ideal-portfolio_chart'>
+      <h4>Your Ideal Portolfio in Percentages</h4>
+        <DonutChart className='donut_chart'
+          data={data}
+        />
+    </div>
   )
 }
 

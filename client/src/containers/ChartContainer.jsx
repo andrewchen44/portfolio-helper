@@ -6,12 +6,11 @@ const ChartContainer = props => (
   <PortfolioChart {...props} />
 );
 
-const mapStateToProps = ({ assetTypes, tolerance, idealPortfolio }) => {
+const mapStateToProps = ({ assetTypes, idealPortfolio }) => {
   return {
     assetTypes,
-    tolerance,
     idealPortfolio,
-  }
+  };
 }
 
 const mapDispatchToProps = (dispatch) => {
