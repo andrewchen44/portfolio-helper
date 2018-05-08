@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ActualPortfolio from '../components/ActualPortfolio.jsx';
+import ActualPortfolio from '../components/actualPortfolio/ActualPortfolio.jsx';
 
 const ActualContainer = (props) => (
   <ActualPortfolio {...props} />

@@ -1,16 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import PortfolioChart from '../components/PortfolioChart.jsx';
+import PortfolioChart from '../components/idealPortfolio/PortfolioChart.jsx';
 
 const ChartContainer = props => (
   <PortfolioChart {...props} />
 );
 
-const mapStateToProps = ({ assetTypes, tolerance, portfolio }) => {
+const mapStateToProps = ({ assetTypes, tolerance, idealPortfolio }) => {
   return {
     assetTypes,
     tolerance,
-    portfolio,
+    idealPortfolio,
   }
 }
 

@@ -1,0 +1,64 @@
+.actual-portfolio_container {
+  height: 35vh;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  border: 1px solid #dcdcdc;
+  padding: 1%;
+  margin: 1%;
+}
+
+.actual-portfolio_inputs_container{
+  text-align: center;
+  width: 100%;
+  height: 13vh;
+  margin: 1%;
+}
+
+.actual-portfolio_inputs {
+  margin: 1% 1%;
+  display: flex;
+}
+
+.actual-portfolio_input {
+  margin: 1% 0.5%;
+  background-color: #fff;
+  padding: 1%;
+  display: inherit;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);;
+}
+
+.rebalance-chart_container {
+  width: 100%;
+  height: 37vh;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.rebalance-chart_items {
+  width: 100%;
+  display: flex;
+}
+
+.rebalance_item {
+  margin: 1% 0.5%;
+  background-color: #fff;
+  padding: 1%;
+  width: 20%;
+  height: 20%;
+  display: inherit;
+  align-items: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.asset_change {
+  width: 80%;;
+}
+
+.actual_input {
+  width: 80%;
+}

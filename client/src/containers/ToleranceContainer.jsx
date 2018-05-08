@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import ToleranceRange from '../components/ToleranceRange.jsx';
+import ToleranceRange from '../components/idealPortfolio/ToleranceRange.jsx';
 
 const ToleranceContainer = (props) => (
   <ToleranceRange {...props} />

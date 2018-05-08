@@ -1,4 +1,6 @@
-const initialState = [
+import * as types from '../constants/ActionTypes'
+
+const idealPortfolios = [
   [5, 10, 15, 30, 40],
   [9, 12, 14, 28, 37],
   [13, 14, 13, 26, 34],
@@ -11,8 +13,12 @@ const initialState = [
   [41, 28, 6, 12, 13],
 ];
 
-export default function portfolio(state = initialState, action) {
+const initialState = [0, 0, 0, 0, 0];
+
+export default function idealPortfolio(state = initialState, action) {
   switch(action.type) {
+    case types.UPDATE_IDEAL:
+      return idealPortfolios[action.tolerance]
     default:
       return state;
   }

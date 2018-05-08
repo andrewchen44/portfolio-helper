@@ -1,4 +1,4 @@
-const initialState = ['Stocks', 'Commodities', 'Bonds', 'Treasuries', 'Cash'];
+const initialState = ['Stocks', 'Property', 'Bonds', 'Treasuries', 'Cash'];
 
 export default function assetTypes(state = initialState, action) {
   switch(action.type) {

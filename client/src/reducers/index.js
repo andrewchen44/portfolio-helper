@@ -1,11 +1,13 @@
 import { combineReducers } from 'redux';
 import tolerance from './tolerance';
-import portfolio from './portfolio';
+import idealPortfolio from './idealPortfolio';
+import actualPortfolio from './actualPortfolio';
 import assetTypes from './assetTypes';
 
 const rootReducer = combineReducers({
   tolerance,
-  portfolio,
+  idealPortfolio,
+  actualPortfolio,
   assetTypes,
 });
 
