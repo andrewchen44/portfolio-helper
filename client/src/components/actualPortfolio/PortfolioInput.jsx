@@ -1,15 +1,35 @@
 import React from 'react';
 import updateActual from '../../actions/actualPortfolioActions';
 
-const PortfolioInput = ({ dispatch, assetType, index }) => {
-  const handleChange = (e) => {
-    dispatch(updateActual(index, e.target.value));
+class PortfolioInput extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: '',
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
-  return (
-    <div>
-      <input className='actual_input' type='number' onChange={handleChange} />
-    </div>
-  )
+  handleChange(e) {
+    const input = e.target.value.split('');
+    let filtered = '';
+    for (let i = 0; i < input.length; i += 1) {
+      const character = input[i];
+      if ((character <= 9 && character >= 0) || character === '.') {
+        filtered += character;
+      }
+    }
+    this.setState({
+      value: filtered,
+    });
+    this.props.dispatch(updateActual(this.props.index, filtered));
+  }
+  render() {
+    return (
+      <div>
+        <input className='actual_input' value={this.state.value} type='number' onChange={this.handleChange} />
+      </div>
+    );
+  }
 }
 
 export default PortfolioInput;

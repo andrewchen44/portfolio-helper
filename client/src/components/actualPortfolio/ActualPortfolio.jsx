@@ -11,7 +11,7 @@ const ActualPortfolio = ({ assetTypes, dispatch }) => {
         {assetTypes.map((assetType, index) => {
           return (<div className='actual-portfolio_input' key={index} >
             {assetType}
-            <PortfolioInput index={index} assetType={assetType} dispatch={dispatch}/>
+            <PortfolioInput index={index} dispatch={dispatch}/>
           </div>)
         })}
       </div>
