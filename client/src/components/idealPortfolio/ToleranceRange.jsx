@@ -24,11 +24,12 @@ class ToleranceRange extends React.Component {
   render() {
     return (
       <div className='tolerance_form'> 
-        <h4>
+        <div className='header'>
           <div>Please Enter Your Risk Tolerance Level</div>
           <div>(1 for risk adverse and 10 for risk tolerant)</div>
-        </h4>
-        <input className='tolerance_input' type='number' min='1' max='10' value={this.state.value} onChange={this.handleChange} />
+          <input className='tolerance_input' type='number' min='1' max='10' value={this.state.value} onChange={this.handleChange} />
+
+        </div>
       </div>
     );
   }

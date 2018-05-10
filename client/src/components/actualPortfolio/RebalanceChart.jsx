@@ -7,9 +7,9 @@ const RebalanceChart = ({ assetTypes, actualPortfolio, idealPortfolio}) => {
     totalPortfolio += assetValue;
   });
   return ( 
-    <div className="rebalance-chart_container">
-      <h4>Changes Required to Get to Ideal Portfolio</h4>
-      <div className="rebalance-chart_items">
+    <div className="container">
+      <div className='header'>Changes Required to Get to Ideal Portfolio</div>
+      <div className="rebalance-chart_items display_row_container">
         {assetTypes.map((assetType, index) => {
           const rebalanceAmount = ((totalPortfolio * (idealPortfolio[index] / 100)) - actualPortfolio[index]).toFixed(2);
           return <RebalanceItem key={assetType} assetType={assetType} rebalanceAmount={rebalanceAmount} />;

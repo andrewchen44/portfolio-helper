@@ -25,9 +25,7 @@ class PortfolioInput extends React.Component {
   }
   render() {
     return (
-      <div>
-        <input className='actual_input' value={this.state.value} type='number' onChange={this.handleChange} />
-      </div>
+      <input className='actual_input' value={this.state.value} type='number' onChange={this.handleChange} />
     );
   }
 }

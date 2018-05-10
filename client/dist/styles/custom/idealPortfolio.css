@@ -1,32 +1,27 @@
 .ideal-portfolio_container {
-  width: 80%;
-  height: 40vh;
   display:flex;
+  flex-direction: column;
   align-items: center;
+  border-bottom: 1px solid#dcdcdc;
   background-color: rgb(243, 243, 243);
-  border: 1px solid #dcdcdc;
-  padding: 1%;
-  margin: 1%;
+  max-height: 100%;
 }
 
 .tolerance_form {
-  display: flex;
-  align-items: center;
   width: 100%;
   background-color: #fff;
-  padding: 1%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);;
 }
 
 .ideal-portfolio_chart{
-  height: 100%;
   width: 100%;
+  padding: 1%;  
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .tolerance_input {
-  width: 20%;
+  width: 5%;
   height: 50%;
 }

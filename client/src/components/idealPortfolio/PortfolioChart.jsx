@@ -10,7 +10,7 @@ const PortfolioChart = ({ assetTypes, tolerance, idealPortfolio}) => {
   });
   return (
     <div className='ideal-portfolio_chart'>
-      <h4>Your Ideal Portolfio in Percentages</h4>
+      <div>Your Ideal Portolfio in Percentages</div>
         <DonutChart className='donut_chart'
           data={data}
         />

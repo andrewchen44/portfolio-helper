@@ -8,11 +8,11 @@ import RebalanceChart from './containers/RebalanceContainer.jsx';
 const App = (props) => {
   return (
     <div className="app_container">
-      <div className="ideal-portfolio_container">
+      <div className="ideal-portfolio_container container">
         <ToleranceContainer />
         <ChartContainer />
       </div>
-      <div className="actual-portfolio_container">
+      <div className="actual-portfolio_container container">
         <ActualContainer />
         <RebalanceChart />
       </div>

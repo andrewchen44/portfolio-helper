@@ -4,5 +4,6 @@
 }
 
 .donut_chart {
-  width: 90% !important;
+  margin-top: 1%;
+  max-width: 100%;
 }

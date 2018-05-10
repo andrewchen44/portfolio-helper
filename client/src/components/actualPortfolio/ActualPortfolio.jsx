@@ -3,13 +3,13 @@ import PortfolioInput from './PortfolioInput.jsx';
 
 const ActualPortfolio = ({ assetTypes, dispatch }) => {
   return( 
-    <div className='actual-portfolio_inputs_container'>
-      <h4>
+    <div className='container actual-portfolio_inputs_container'>
+      <div className='header'>
         Please Enter Your Actual Potfolio Amounts in Dollars
-      </h4>
-      <div className='actual-portfolio_inputs'>
+      </div >
+      <div className='display_row_container'>
         {assetTypes.map((assetType, index) => {
-          return (<div className='actual-portfolio_input' key={index} >
+          return (<div className='actual-portfolio_input ' key={index} >
             {assetType}
             <PortfolioInput index={index} dispatch={dispatch}/>
           </div>)

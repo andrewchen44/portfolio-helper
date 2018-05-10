@@ -4,17 +4,38 @@
 
 html {
   background-color: #fff;
+  color: #666;
 }
 
-h4 {
-  margin: 2%;
+.header {
+  text-align: center; 
+  padding: 1%;
+  font-weight: bold;
+  background-color: #7da7c6;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.display_row_container {
+  margin: 1% 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .app_container {
+  position: fixed;
+  top: 0px;
+  left: 0;
   width: 100vw;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: scroll;
 }
