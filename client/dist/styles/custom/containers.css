@@ -1,0 +1,17 @@
+.container {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.popup_single_item {
+  padding: 1%;  
+  margin: 1% 0.5%;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+
+.display_row_container {
+  margin: 1% 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 

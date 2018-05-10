@@ -9,7 +9,7 @@ const ActualPortfolio = ({ assetTypes, dispatch }) => {
       </div >
       <div className='display_row_container'>
         {assetTypes.map((assetType, index) => {
-          return (<div className='actual-portfolio_input ' key={index} >
+          return (<div className='actual-portfolio_input popup_single_item' key={index} >
             {assetType}
             <PortfolioInput index={index} dispatch={dispatch}/>
           </div>)

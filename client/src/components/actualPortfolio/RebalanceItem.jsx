@@ -11,7 +11,7 @@ const RebalanceItem = ({ assetType, rebalanceAmount }) => {
     icon = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIu7OTcjmNy5Gy0MUiefPtlIXJdhb68BUINeCHhZnX-NrNDVWt';
   }
   return ( 
-    <div className='rebalance_item' >
+    <div className='rebalance_item popup_single_item' >
       <div className='asset_change'>{assetType}: {rebalance}</div>
       <div><img className='rebalance_icon' src={icon} /></div>
     </div>

@@ -1,10 +1,12 @@
 @import './custom/actualPortfolio.css';
 @import './custom/idealPortfolio.css';
 @import './custom/graphics.css';
+@import './custom/containers.css';
 
 html {
   background-color: #fff;
   color: #666;
+  font-family: 'Rubik', sans-serif;
 }
 
 .header {
@@ -15,27 +17,26 @@ html {
   color: white;
 }
 
-.container {
-  width: 100%;
-  margin-bottom: 1%;
-}
-
-.display_row_container {
-  margin: 1% 1%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .app_container {
   position: fixed;
   top: 0px;
   left: 0;
   width: 100vw;
-  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: scroll;
+}
+
+@media screen and (max-width: 767px) {
+  .app_container {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .app_container {
+    height: 100%;
+  }
 }
