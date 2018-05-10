@@ -13,14 +13,9 @@ A tool used to help an individual get to their ideal portfolio categories.
 - researching how to design component architecture to be reused with React Native: 1.5 hours
 - creating components and functionality: 6-7 hours
 - styling: 2 hours
+- additional styling/responcivness: 4 hours
 
-# assumptions and things that would be improved with more time
-
-Assumptions:
+# assumptions 
 - there will only 5 portfolio categories and this will not change
 
-Improvements:
-- putting the components in the app component in parent components for increased modularity
-- redesigning layout to have a better color scheme
-- formatting all number values in dollars
-- not allowing numbers greater than 10 in the risk tolerance field
+
