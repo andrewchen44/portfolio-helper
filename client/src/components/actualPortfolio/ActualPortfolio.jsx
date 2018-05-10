@@ -3,7 +3,7 @@ import PortfolioInput from './PortfolioInput.jsx';
 
 const ActualPortfolio = ({ assetTypes, dispatch }) => {
   return( 
-    <div className='container actual-portfolio_inputs_container'>
+    <div className='container'>
       <div className='header'>
         Please Enter Your Actual Potfolio Amounts in Dollars
       </div >

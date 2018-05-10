@@ -9,6 +9,11 @@ html {
   font-family: 'Rubik', sans-serif;
 }
 
+input {
+  padding: 2px;
+  border-radius: 5px;
+}
+
 .header {
   text-align: center; 
   padding: 1%;
